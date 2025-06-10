@@ -1,3 +1,13 @@
+.categories h1 a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .categories h1 a:visited {
+    text-decoration: none;
+    color: black;
+  }
+
 .categories {
     display: flex;
     gap: 30px; 
@@ -7,7 +17,7 @@
     font-size: 40px;
     padding: 20px;
     margin: 0; 
-    
+
   }
 
   .categories h3 {
@@ -37,4 +47,42 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
+  .categories .dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.categories .dropdown h3 {
+    margin: 0;
+    padding: 10px;
+    font-size: 26px;
+}
+
+.categories .dropdown-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    list-style-type: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-width: 150px;
+}
+
+
+
+.categories .dropdown-menu li {
+    padding: 5px 10px;
+}
+
+.categories .dropdown-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.categories .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
   
